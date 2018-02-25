@@ -251,19 +251,19 @@ public class TimeTableRandomTest {
 				//			System.out.println(" Seed:"+randomseed );
 				Random random = new Random(randomseed);
 
-				GregorianCalendar cal1 = new GregorianCalendar(ValuesGenerator.getRandomIntBetween(random, 2000, 2020), ValuesGenerator.getRandomIntBetween(random, 1, 12), ValuesGenerator.getRandomIntBetween(random, -10, 30));
+				GregorianCalendar cal1 = new GregorianCalendar(2018, ValuesGenerator.getRandomIntBetween(random, 1, 12), ValuesGenerator.getRandomIntBetween(random, 1, 30));
 				CalDay day1 = new CalDay(cal1);
-				GregorianCalendar cal2 = new GregorianCalendar(ValuesGenerator.getRandomIntBetween(random, 2000, 2020), ValuesGenerator.getRandomIntBetween(random, 1, 12), ValuesGenerator.getRandomIntBetween(random, -10, 30));
+				GregorianCalendar cal2 = new GregorianCalendar(2019, ValuesGenerator.getRandomIntBetween(random, 1, 12), ValuesGenerator.getRandomIntBetween(random, -10, 30));
 				CalDay day2 = new CalDay(cal2);
-				GregorianCalendar cal3 = new GregorianCalendar(ValuesGenerator.getRandomIntBetween(random, 2000, 2020), ValuesGenerator.getRandomIntBetween(random, 1, 12), ValuesGenerator.getRandomIntBetween(random, -10, 30));
+				GregorianCalendar cal3 = new GregorianCalendar(2019, ValuesGenerator.getRandomIntBetween(random, 1, 12), ValuesGenerator.getRandomIntBetween(random, -10, 30));
 				CalDay day3 = new CalDay(cal3);
 
 				//hour, minute, day, month, year
 				Appt appt1 = new Appt(ValuesGenerator.RandInt(random), ValuesGenerator.RandInt(random), ValuesGenerator.RandInt(random), ValuesGenerator.getRandomIntBetween(random, 1, 12), 2018, "Jan 1", "testing");
-				Appt appt2 = new Appt(ValuesGenerator.RandInt(random), ValuesGenerator.RandInt(random), ValuesGenerator.RandInt(random), ValuesGenerator.getRandomIntBetween(random, 1, 12), 2018, "Feb 1", "testing again");
-				Appt appt3 = new Appt(ValuesGenerator.RandInt(random), ValuesGenerator.RandInt(random), ValuesGenerator.RandInt(random), ValuesGenerator.getRandomIntBetween(random, 1, 12), 2018, "Feb 12", "testing again");
-				Appt appt4 = new Appt(ValuesGenerator.RandInt(random), ValuesGenerator.RandInt(random), ValuesGenerator.RandInt(random), ValuesGenerator.getRandomIntBetween(random, 1, 12), 2018, "Feb 12", "testing again");
-				Appt appt5 = new Appt(ValuesGenerator.RandInt(random), ValuesGenerator.RandInt(random), ValuesGenerator.RandInt(random), ValuesGenerator.getRandomIntBetween(random, 1, 12), 2018, "Feb 12", "testing again");
+				Appt appt2 = new Appt(ValuesGenerator.RandInt(random), ValuesGenerator.RandInt(random), ValuesGenerator.RandInt(random), ValuesGenerator.getRandomIntBetween(random, 1, 12), 2019, "Feb 1", "testing again");
+				Appt appt3 = new Appt(ValuesGenerator.RandInt(random), ValuesGenerator.RandInt(random), ValuesGenerator.RandInt(random), ValuesGenerator.getRandomIntBetween(random, 1, 12), 2019, "Feb 12", "testing again");
+				Appt appt4 = new Appt(ValuesGenerator.RandInt(random), ValuesGenerator.RandInt(random), ValuesGenerator.RandInt(random), ValuesGenerator.getRandomIntBetween(random, 1, 12), 2019, "Feb 12", "testing again");
+				Appt appt5 = new Appt(ValuesGenerator.RandInt(random), ValuesGenerator.RandInt(random), ValuesGenerator.RandInt(random), ValuesGenerator.getRandomIntBetween(random, 1, 12), 2019, "Feb 12", "testing again");
 
 				TimeTable testtable = new TimeTable();
 
@@ -282,10 +282,10 @@ public class TimeTableRandomTest {
 
 				int[] recurDaysArr={2,3};
 				appt2.setRecurrence(recurDaysArr, Appt.RECUR_BY_WEEKLY, 2, Appt.RECUR_NUMBER_FOREVER);
-				testtable.getApptRange(allappts, cal2, cal3);
+				testtable.getApptRange(allappts, cal1, cal2);
 
 				appt3.setRecurrence(recurDaysArr, Appt.RECUR_BY_MONTHLY, 1, Appt.RECUR_NUMBER_FOREVER);
-				testtable.getApptRange(allappts, cal2, cal3);
+				testtable.getApptRange(allappts, cal2, cal1);
 
 				appt4.setRecurrence(recurDaysArr, Appt.RECUR_BY_YEARLY, 1, Appt.RECUR_NUMBER_FOREVER);
 				testtable.getApptRange(allappts, cal2, cal3);
