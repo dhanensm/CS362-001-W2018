@@ -1,25 +1,30 @@
+Madison Dhanens (dhanensm)
+
+ID: start_hour_bug
 FOUND: appt.java isValid( ) line	116
 CAUGHT BY: test02b( ) ApptRandomTest.java
-	   test06b( ) ApptRandomTest.java
-ISSUE: isValid( ) returned true rather than false when an entered start hour was greater 
-       than 24 or less than zero, so all values of startHour are accepted
+	         test06b( ) ApptRandomTest.java
+ISSUE: isValid( ) returned true rather than false when an entered start hour was greater than 24 or less than zero, so all values of startHour are accepted
 SEVERITY: medium 
+PRIORITY: medium
 
+ID: am_pm_bug
 FOUND: appt.java representationapp( ) line 280
 CAUGHT BY: test05b( ) ApptRandomTest.java
-ISSUE: an inequality was reversed, which caused the hour times greater than 11 to get am 
-       rather than pm (and vice versa)
+ISSUE: an inequality was reversed, which caused the hour times greater than 11 to get am rather than pm (and vice versa)
 SEVERITY: medium
+PRIORITY: medium
 
+ID: compare_appt_bug
 FOUND: appt.java compareTo( ) line 306
 CAUGHT BY: test10b( ) ApptRandomTest.java
-ISSUE: the start hours should be subtracted to find the difference between the two values 
-       but they are added, which will always return a number greater than or equal to 0
-SEVERITY: medium
+ISSUE: the start hours should be subtracted to find the difference between the two values but they are added, which will always return a number greater than or equal to 0
+SEVERITY: medium 
+PRIORITY: medium
 
+ID: out_of_range_bug
 FOUND: timetable.java getApptRange( ) line 38
 CAUGHT BY: test03b( ) TimeTableRandomTest.java
-ISSUE: all appointments are out of range because the if statement is entered if the 
-       last day is after the first, when it should be negated and only be entered if the 
-       last day is before the first.  The rest of the code cannot execute with this error.
+ISSUE: all appointments are out of range because the if statement is entered if the last day is after the first, when it should be negated and only be entered if the last day is before the first.  The rest of the code cannot execute with this error.
 SEVERITY: high
+PRIORITY: high
