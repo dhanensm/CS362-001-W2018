@@ -110,10 +110,9 @@ public class CalDayRandomTest {
 	 }
 	 //tests greg constructor
 	 @Test
-	  public void test02b()  throws Throwable  {
+	  public void test_bug_report()  throws Throwable  {
 			GregorianCalendar testcal = new GregorianCalendar();
  			CalDay day = new CalDay(testcal);
-			//undid
 			assertEquals(true, day.isValid());
 	 }
 	 //testing appointment is added to listAppt

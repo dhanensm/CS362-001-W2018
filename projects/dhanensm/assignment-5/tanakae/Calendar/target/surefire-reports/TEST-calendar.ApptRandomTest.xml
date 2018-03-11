@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="17" failures="4" name="calendar.ApptRandomTest" time="37.654" errors="0" skipped="0">
+<testsuite tests="17" failures="4" name="calendar.ApptRandomTest" time="37.579" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="9+181"/>
@@ -29,7 +29,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:/Program Files/apache-maven-3.5.2/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-9\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\mdhan_000\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\mdhan_000\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Acer\abFiles;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;%USERPROFILE%\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit;C:\Program Files (x86)\Skype\Phone;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\apache-maven-3.5.2\bin;C:\Users\mdhan_000\AppData\Local\atom\bin;C:\Users\mdhan_000\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-9\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\mdhan_000\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\mdhan_000\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Acer\abFiles;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit;C:\Program Files (x86)\Skype\Phone;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\apache-maven-3.5.2\bin;C:\Users\mdhan_000\AppData\Local\atom\bin;C:\Users\mdhan_000\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
     <property name="jansi.passthrough" value="true"/>
     <property name="maven.conf" value="C:/Program Files/apache-maven-3.5.2/conf"/>
     <property name="jdk.debug" value="release"/>
@@ -63,8 +63,8 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="calendar.ApptRandomTest" name="test01b" time="0.023"/>
-  <testcase classname="calendar.ApptRandomTest" name="test02b" time="0.013">
+  <testcase classname="calendar.ApptRandomTest" name="test01b" time="0.016"/>
+  <testcase classname="calendar.ApptRandomTest" name="test02b" time="0.015">
     <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -104,7 +104,7 @@
   </testcase>
   <testcase classname="calendar.ApptRandomTest" name="test03b" time="0"/>
   <testcase classname="calendar.ApptRandomTest" name="test04b" time="0"/>
-  <testcase classname="calendar.ApptRandomTest" name="test05b" time="0.034">
+  <testcase classname="calendar.ApptRandomTest" name="test05b" time="0.002">
     <failure message="expected:&lt;	1/15/2018 at 1:30[p]m ,Birthday Party, T...&gt; but was:&lt;	1/15/2018 at 1:30[a]m ,Birthday Party, T...&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;	1/15/2018 at 1:30[p]m ,Birthday Party, T...&gt; but was:&lt;	1/15/2018 at 1:30[a]m ,Birthday Party, T...&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
@@ -181,8 +181,8 @@
 </failure>
   </testcase>
   <testcase classname="calendar.ApptRandomTest" name="test07b" time="0.001"/>
-  <testcase classname="calendar.ApptRandomTest" name="test08b" time="0.001"/>
-  <testcase classname="calendar.ApptRandomTest" name="test10b" time="0.005">
+  <testcase classname="calendar.ApptRandomTest" name="test08b" time="0"/>
+  <testcase classname="calendar.ApptRandomTest" name="test10b" time="0.002">
     <failure message="expected:&lt;1&gt; but was:&lt;61&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;1&gt; but was:&lt;61&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -220,12 +220,12 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 </failure>
   </testcase>
-  <testcase classname="calendar.ApptRandomTest" name="test11b" time="0.001"/>
-  <testcase classname="calendar.ApptRandomTest" name="test12b" time="0.001"/>
-  <testcase classname="calendar.ApptRandomTest" name="randomtest" time="7.554"/>
-  <testcase classname="calendar.ApptRandomTest" name="randomtest02" time="7.505"/>
-  <testcase classname="calendar.ApptRandomTest" name="randomtest03" time="7.5"/>
-  <testcase classname="calendar.ApptRandomTest" name="randomtest04" time="7.509"/>
+  <testcase classname="calendar.ApptRandomTest" name="test11b" time="0"/>
+  <testcase classname="calendar.ApptRandomTest" name="test12b" time="0"/>
+  <testcase classname="calendar.ApptRandomTest" name="randomtest" time="7.531"/>
+  <testcase classname="calendar.ApptRandomTest" name="randomtest02" time="7.502"/>
+  <testcase classname="calendar.ApptRandomTest" name="randomtest03" time="7.502"/>
+  <testcase classname="calendar.ApptRandomTest" name="randomtest04" time="7.503"/>
   <testcase classname="calendar.ApptRandomTest" name="randomtest05" time="0"/>
-  <testcase classname="calendar.ApptRandomTest" name="randomtest06" time="7.505"/>
+  <testcase classname="calendar.ApptRandomTest" name="randomtest06" time="7.503"/>
 </testsuite>

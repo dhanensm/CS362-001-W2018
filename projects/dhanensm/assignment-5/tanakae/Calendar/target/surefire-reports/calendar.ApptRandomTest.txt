@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: calendar.ApptRandomTest
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 37.9 sec <<< FAILURE!
-test02b(calendar.ApptRandomTest)  Time elapsed: 0.013 sec  <<< FAILURE!
+Tests run: 17, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 37.768 sec <<< FAILURE!
+test02b(calendar.ApptRandomTest)  Time elapsed: 0.015 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<false> but was:<true>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -39,7 +39,7 @@ java.lang.AssertionError: expected:<false> but was:<true>
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-test05b(calendar.ApptRandomTest)  Time elapsed: 0.034 sec  <<< FAILURE!
+test05b(calendar.ApptRandomTest)  Time elapsed: 0.002 sec  <<< FAILURE!
 org.junit.ComparisonFailure: expected:<	1/15/2018 at 1:30[p]m ,Birthday Party, T...> but was:<	1/15/2018 at 1:30[a]m ,Birthday Party, T...>
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
@@ -112,7 +112,7 @@ java.lang.AssertionError: expected:<null> but was:<	1/15/2018 at 688:30am ,Birth
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-test10b(calendar.ApptRandomTest)  Time elapsed: 0.005 sec  <<< FAILURE!
+test10b(calendar.ApptRandomTest)  Time elapsed: 0.002 sec  <<< FAILURE!
 java.lang.AssertionError: expected:<1> but was:<61>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)

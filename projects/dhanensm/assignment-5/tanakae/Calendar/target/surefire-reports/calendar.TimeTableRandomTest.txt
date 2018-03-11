@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: calendar.TimeTableRandomTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 30.034 sec <<< FAILURE!
+Tests run: 8, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 29.985 sec <<< FAILURE!
 test03b(calendar.TimeTableRandomTest)  Time elapsed: 0 sec  <<< ERROR!
 calendar.DateOutOfRangeException: Second date specified is not  before the first date specified.
 	at calendar.TimeTable.getApptRange(TimeTable.java:39)
